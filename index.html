@@ -8,9 +8,22 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1 data-js="text">
-      There are currently <span data-js="number"></span> people in space. Their
-      names are: <span data-js="names"></span>
+    <h1 class="firstSentence" data-js="firstSentence">
+      There are currently <span data-js="number"></span> people in
+    </h1>
+    <h1>
+      <select id="location" name="location" class="widget">
+        <option value="space" selected="selected">space</option>
+        <option value="iss">ISS</option>
+        <option value="tiangong">Tiangong</option>
+      </select>
+
+      <!-- <select id="a_background" name="background" class="widget">
+        <option value="1">Yes</option>
+        <option value="0" selected="selected">No</option>
+      </select> -->
+
+      Their names are: <span data-js="names"></span>
     </h1>
     <p>
       Made with love and thanks to
