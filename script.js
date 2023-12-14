@@ -19,21 +19,25 @@ async function getNames() {
     document.querySelector("#location").addEventListener("change", function () {
       if (this.value == "space") {
         console.log("SPACE selected");
-        firstSentence.innerHTML = `There are currently <span data-js="number">${data.number}</span> people in`;
+        firstSentence.innerHTML = `in`;
+        numberOfAstronauts.innerHTML = data.number;
       }
       if (this.value == "iss") {
         console.log("ISS selected");
         const isISS = data.people.filter((craft) => {
           return craft.craft.startsWith("ISS");
         });
-        firstSentence.innerHTML = `There are currently <span data-js="number">${isISS.length}</span> people on the`;
+
+        firstSentence.innerHTML = `on the`;
+        numberOfAstronauts.innerHTML = isISS.length;
       }
       if (this.value == "tiangong") {
         console.log("Tiangong selected");
         const isTiangong = data.people.filter((craft) => {
           return craft.craft.startsWith("Tiangong");
         });
-        firstSentence.innerHTML = `There are currently <span data-js="number">${isTiangong.length}</span> people on the`;
+        firstSentence.innerHTML = `on the`;
+        numberOfAstronauts.innerHTML = isTiangong.length;
       }
     });
   } catch (error) {

@@ -12,18 +12,20 @@ body {
   flex-direction: column;
 }
 
+.textContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-content: flex-start;
+}
+
 h1 {
   color: grey;
   font-size: 3rem;
-  flex: 1;
   margin: 40px;
 }
 
-.firstSentence {
-  margin-bottom: -40px;
-}
-
-span {
+.names {
   color: white;
 }
 

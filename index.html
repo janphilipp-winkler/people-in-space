@@ -8,23 +8,25 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-    <h1 class="firstSentence" data-js="firstSentence">
-      There are currently <span data-js="number"></span> people in
-    </h1>
-    <h1>
-      <select id="location" name="location" class="widget">
-        <option value="space" selected="selected">space</option>
-        <option value="iss">ISS</option>
-        <option value="tiangong">Tiangong</option>
-      </select>
+    <div class="textContainer">
+      <h1>
+        There are currently <span data-js="number"></span> people
+        <span class="firstSentence" data-js="firstSentence">in</span>
 
-      <!-- <select id="a_background" name="background" class="widget">
+        <select id="location" name="location" class="widget">
+          <option value="space" selected="selected">space</option>
+          <option value="iss">ISS</option>
+          <option value="tiangong">Tiangong</option>
+        </select>
+
+        <!-- <select id="a_background" name="background" class="widget">
         <option value="1">Yes</option>
         <option value="0" selected="selected">No</option>
       </select> -->
 
-      Their names are: <span data-js="names"></span>
-    </h1>
+        Their names are: <span class="names" data-js="names"></span>
+      </h1>
+    </div>
     <p>
       Made with love and thanks to
       <a href="http://open-notify.org/Open-Notify-API/People-In-Space/"
