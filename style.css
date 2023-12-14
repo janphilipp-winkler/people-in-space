@@ -5,19 +5,26 @@
 }
 
 body {
-  height: 100%;
-  margin: 40px;
+  height: 100vh;
   font-family: system-ui;
   background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
   color: grey;
   font-size: 3rem;
+  margin: 40px;
+  flex: 1;
 }
 
 span {
   color: white;
+}
+
+p {
+  margin: 40px;
 }
 
 p,
